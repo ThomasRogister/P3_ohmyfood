@@ -9,4 +9,4 @@ to the website : https://thomasrogister.github.io/P3_ohmyfood/
 
 to OpenClassrooms : https://openclassrooms.com/fr/
 
-![](images%20presentation/home%20page.png)
+![](images%20presentation/home%20page.png)(images%20presentation/restaurants.png)
