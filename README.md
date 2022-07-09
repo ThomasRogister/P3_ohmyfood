@@ -6,4 +6,5 @@ Our concept allows users to compose their own menu and reduce their waiting time
 No more wasting time consulting the card!
 ---
 to the website : https://thomasrogister.github.io/P3_ohmyfood/
-to OpenClassromms : https://openclassrooms.com/fr/
+
+to OpenClassrooms : https://openclassrooms.com/fr/
