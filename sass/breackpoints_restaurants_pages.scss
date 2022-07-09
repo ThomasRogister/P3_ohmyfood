@@ -57,14 +57,16 @@
         }
 
         .cards {
-            min-width: 100px;
-            width: 100%;
+            max-width: 100%;
+
+
         }
 
-        .starters,
-        .dishs,
-        .desserts {
-            min-width: 0;
-        }
+    }
+
+    .starters,
+    .dishs,
+    .desserts {
+        min-width: 0;
     }
 }

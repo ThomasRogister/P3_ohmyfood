@@ -1,7 +1,7 @@
-@import "font.scss";
-@import "normalize.scss";
-@import "base.scss";
-@import "effets.scss";
+@import "libs/font.scss";
+@import "libs/normalize.scss";
+@import "libs/base.scss";
+@import "libs/animations.scss";
 @import "breackpoints_restaurants_pages.scss";
 
 * {
@@ -149,8 +149,6 @@ main {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-
-
     }
 
     &__row {
