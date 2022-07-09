@@ -1,4 +1,4 @@
-# Ohmyfood!
+![](images%20presentation/ohmyfood%20title.png)
 ## This is the third project of the OpenClassrooms Dev Web courses.
 
 ### Ohmyfood! is an online meal ordering company. 
