@@ -1,0 +1,15 @@
+/*================================================    
+                          **** colors ***    
+        =================================================*/
+/**location**/
+/** button **/
+/** card **/
+.loader {
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+  inset: 0;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=style_loader.css.map */

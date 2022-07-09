@@ -1,0 +1,262 @@
+@import "font.scss";
+@import "normalize.scss";
+@import "base.scss";
+@import "effets.scss";
+@import "breackpoints_restaurants_pages.scss";
+
+* {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+}
+
+
+/*================================================    
+                          **** HEADER ***    
+        =================================================*/
+
+.header {
+    position: relative;
+    text-align: center;
+    padding: 20px 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__back {
+        position: absolute;
+        padding-left: 10px;
+        left: 10px;
+        top: 25px;
+    }
+
+    &__logo {
+        height: 30px;
+    }
+}
+
+/*================================================    
+                          **** MAIN ***    
+        =================================================*/
+main {
+    background-color: $cleargrey;
+}
+
+/*** BANNER ***/
+
+.banner {
+
+    position: relative;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        position: absolute;
+        bottom: -20PX;
+        width: 100%;
+        padding: 30px 20px;
+        background-color: $cleargrey;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-radius: 25px 25px 0 0;
+    }
+
+    &__name {
+        font-family: font_1;
+    }
+
+    .fa-stack {
+        width: 40px;
+        height: 20px;
+        text-align: center;
+    }
+
+    .fa-heart {
+        font-size: 25px;
+    }
+
+    .fas {
+        width: 25px;
+    }
+
+    .far {
+        width: 25px;
+        color: $darkgrey;
+    }
+
+}
+
+/** MENUS **/
+
+.starters,
+.dishs,
+.desserts {
+    padding: 20px;
+
+
+    &__title {
+        font-family: font_2;
+        font-size: 20px;
+        border-bottom: 3px solid $tertiary;
+        width: 50px;
+        margin-left: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+.cards {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.card {
+    position: relative;
+    min-height: 70px;
+    margin: 10px 0;
+    background-color: white;
+    padding: 15px;
+    padding-right: 80px;
+    border-radius: 20px;
+
+
+    &__title {
+        font-family: font_3;
+        padding-bottom: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__subtitle {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+
+    }
+
+    &__row {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    &__bottomline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 0px;
+
+    }
+
+    &__price {
+        font-family: font_3;
+        // background-color: red;
+        width: 65px;
+        height: 20px;
+        position: absolute;
+        right: -20px;
+    }
+
+    &__check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiary;
+        width: 65px;
+        height: 75px;
+        border-radius: 0 20px 20px 0;
+        position: absolute;
+        right: -50px;
+        top: 0;
+        opacity: 0;
+
+
+    }
+}
+
+
+.button {
+    text-align: center;
+    padding: 30px 0 100px 0;
+}
+
+.btn {
+    background: $gradient;
+    color: white;
+    text-decoration: none;
+    font-family: $font_3;
+    font-size: 14px;
+    padding: 12px 40px 12px 40px;
+    border-radius: 25px;
+    box-shadow: $shadow;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    box-shadow: $shadowhover;
+}
+
+
+
+/*================================================    
+                                  **** FOOTER ***    
+                =================================================*/
+
+.footer {
+    background-color: $darkgrey;
+    color: white;
+    padding: 25px 25px 40px 25px;
+
+    &__logo {
+        font-family: font_1;
+        font-size: 20px;
+    }
+
+    &__list {
+        font-family: font_3;
+        font-size: 16px;
+        padding: 20px 0;
+    }
+
+    &__line {
+        padding: 5px 0;
+    }
+
+    & .bottom {
+        font-family: font_2;
+    }
+
+    &__line a {
+        color: white;
+
+    }
+
+    &__icon {
+        padding-right: 10px;
+    }
+
+}
+
+.fa-handshake-angle {
+    font-size: 11px;
+}

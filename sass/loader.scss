@@ -1,0 +1,76 @@
+/*================================================    
+                **** LOADER  ***    
+        =================================================*/
+
+.loader {
+    position: fixed;
+    background-color: $cleargrey;
+    height: 100vh;
+    width: 100vw;
+    inset: 0;
+    z-index: 1;
+    animation: load 0.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        position: relative;
+        top: -250px;
+        height: 70px;
+        padding-bottom: 30px;
+        opacity: 1;
+    }
+
+    &__container {
+        position: relative;
+        top: -250px;
+        display: flex;
+        flex-direction: row;
+        transition: opacity 1s, ease-in-out;
+    }
+
+    &__dot {
+        opacity: 0.8;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin: 0 10px;
+        background: $gradient;
+        animation: loader infinite 0.4s alternate;
+    }
+}
+
+@keyframes load {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+@keyframes loader {
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.d1 {
+    animation-delay: 0.1s;
+}
+
+.d2 {
+    animation-delay: 0.2s;
+}
+
+.d3 {
+    animation-delay: 0.3s;
+}

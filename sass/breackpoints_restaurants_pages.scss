@@ -1,0 +1,70 @@
+/*================================================    
+                 **** RESPONSIVE PAD  ***    
+        =================================================*/
+
+@media screen and (min-width: 768px) {
+    header .header {
+        &__logo {
+            height: 40px;
+        }
+    }
+
+    main {
+        .banner {
+            &__title {
+                justify-content: center;
+                gap: 80px;
+                padding-bottom: 40px;
+            }
+        }
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .cards {
+
+            width: 730px;
+        }
+    }
+
+}
+
+/*================================================    
+                 **** RESPONSIVE DESKTOP ***    
+        =================================================*/
+
+@media screen and (min-width: 992px) {
+    header .header {
+        &__logo {
+            height: 50px;
+        }
+    }
+
+    main {
+        .banner {
+            height: 500px;
+        }
+
+        .container {
+            padding: 0 20px;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .cards {
+            min-width: 100px;
+            width: 100%;
+        }
+
+        .starters,
+        .dishs,
+        .desserts {
+            min-width: 0;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+/*================================================    
+                **** RESPONSIVE PAD  ***    
+        =================================================*/
+
+@media screen and (min-width: 768px) {
+
+    header .logo {
+        padding: 20px 0 20px 0;
+
+        &__img {
+            height: 40px;
+        }
+    }
+
+
+    main {
+
+        .function {
+            padding: 40px;
+
+            &__stages {
+                width: 75%;
+            }
+        }
+
+        .restaurants {
+            padding: 20px 40px;
+
+            .cards {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding: 0 40px 80px 40px;
+            }
+
+            .card {
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                flex-basis: 40%;
+
+                &__img {
+                    min-height: 175px;
+                }
+            }
+        }
+    }
+}
+
+/*================================================    
+                **** RESPONSIVE DESKTOP  ***    
+        =================================================*/
+
+@media screen and (min-width: 992px) {
+
+    header {
+        .logo {
+            &__img {
+                height: 50px;
+            }
+        }
+    }
+
+    main {
+
+        .function {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__stages {
+                gap: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+
+            &__stage {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            &__card,
+            &__card_3 {
+                padding: 35px 30px;
+            }
+
+            &__counter {
+                top: 10px;
+                left: 0;
+            }
+        }
+
+        .restaurants {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                padding-bottom: 20px;
+            }
+
+            .cards {
+                justify-content: center;
+            }
+
+            .card {
+                flex-basis: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    main {
+        .restaurants {
+
+            .cards {
+                justify-content: space-around;
+            }
+
+            .card {
+                flex-basis: 20%;
+            }
+        }
+    }
+}
