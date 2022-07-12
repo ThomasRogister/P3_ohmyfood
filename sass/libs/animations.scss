@@ -54,6 +54,7 @@
     overflow: hidden;
     opacity: 0;
     opacity: 1 \9;
+
     -webkit-animation: fadeIn ease-in 1;
     -moz-animation: fadeIn ease-in 1;
     animation: fadeIn ease-in 1;
@@ -65,6 +66,7 @@
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     animation-duration: 1s;
+
 
 
     &:hover &__check {
