@@ -390,8 +390,6 @@ template {
 }
 .card {
   overflow: hidden;
-  opacity: 0;
-  opacity: 1 \9 ;
   -webkit-animation: fadeIn ease-in 1;
   -moz-animation: fadeIn ease-in 1;
   animation: fadeIn ease-in 1;
@@ -404,11 +402,11 @@ template {
 }
 .card:hover .card__check {
   opacity: 1;
-  transform: translate(-50px);
+  transform: translate(-65px);
   transition: transform 450ms ease-in-out;
 }
 .card:hover .fa-circle-check {
-  transform: rotate(720deg);
+  transform: rotate(-360deg);
 }
 .card .fa-circle-check {
   opacity: 1;
@@ -454,7 +452,6 @@ template {
 .card_3:hover,
 .card_4:hover {
   overflow: hidden;
-  padding-right: 80px;
 }
 
 /*================================================    
@@ -649,6 +646,8 @@ main {
   height: 20px;
   position: absolute;
   right: -20px;
+  transform: translate(0px);
+  transition: transform 500ms ease-in;
 }
 .card__check {
   display: flex;
@@ -659,9 +658,10 @@ main {
   height: 75px;
   border-radius: 0 20px 20px 0;
   position: absolute;
-  right: -50px;
+  right: -65px;
   top: 0;
-  opacity: 0;
+  transform: translate(0px);
+  transition: transform 450ms ease-in-out;
 }
 
 .button {

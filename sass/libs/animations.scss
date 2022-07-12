@@ -52,9 +52,6 @@
 
 .card {
     overflow: hidden;
-    opacity: 0;
-    opacity: 1 \9;
-
     -webkit-animation: fadeIn ease-in 1;
     -moz-animation: fadeIn ease-in 1;
     animation: fadeIn ease-in 1;
@@ -68,15 +65,14 @@
     animation-duration: 1s;
 
 
-
     &:hover &__check {
         opacity: 1;
-        transform: translate(-50px);
+        transform: translate(-65px);
         transition: transform 450ms ease-in-out;
     }
 
     &:hover .fa-circle-check {
-        transform: rotate(720deg);
+        transform: rotate(-360deg);
     }
 
     & .fa-circle-check {
@@ -93,6 +89,7 @@
 
 .card:hover .card__bottomline {
     padding-right: 35px;
+
 }
 
 
@@ -126,5 +123,5 @@
 .card_3:hover,
 .card_4:hover {
     overflow: hidden;
-    padding-right: 80px;
+    // // padding-right: 80px;
 }

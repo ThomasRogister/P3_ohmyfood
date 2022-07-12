@@ -169,11 +169,12 @@ main {
 
     &__price {
         font-family: font_3;
-        // background-color: red;
         width: 65px;
         height: 20px;
         position: absolute;
         right: -20px;
+        transform: translate(0px);
+        transition: transform 500ms ease-in;
     }
 
     &__check {
@@ -185,9 +186,10 @@ main {
         height: 75px;
         border-radius: 0 20px 20px 0;
         position: absolute;
-        right: -50px;
+        right: -65px;
         top: 0;
-        opacity: 0;
+        transform: translate(0px);
+        transition: transform 450ms ease-in-out;
 
 
 
